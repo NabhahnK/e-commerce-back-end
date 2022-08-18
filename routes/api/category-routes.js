@@ -6,6 +6,24 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
+  try {
+    // Get all projects and JOIN with user data
+    const categoriesData = Category.findAll({
+      include: [
+        {
+          model: Product,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const categories = categoriesData.map((category) => category.get({ plain: true }));
+
+    res.status(200).json(categories);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/:id', (req, res) => {
