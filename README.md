@@ -5,6 +5,8 @@
   ## Description
 
   I wanted to see if I could build a application back end. The back end lets the user add, update, and delete a category, product, and tag. This really pushed me to learn many to many relationships in mysql.
+  [Part One](https://drive.google.com/file/d/1ZsO7QDIWZTyA-KfjyerlaIPv4L_IJqf_/view "Part one video")
+  [Part Two](https://drive.google.com/file/d/1W6Y2T_fksMP5zBdwmaLLf-LmfNOu8Kqh/view "part two video")
 
   # Table of Contents
   1. [Description](#description)
